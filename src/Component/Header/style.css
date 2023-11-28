@@ -1,0 +1,46 @@
+.header {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px; 
+    color: rgb(237, 131, 45);
+    width: 70vw;
+    border-bottom: 5px solid rgb(237, 131, 45);
+}
+
+.logoImg {
+    max-width: 100%; 
+    width: 200px; 
+}
+
+.headerList {
+    padding: 0; 
+    list-style: none;
+    display: flex; 
+}
+
+.headerList li {
+    margin: 0 5rem; 
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .logoImg {
+        margin-right: 1rem;
+
+    }
+    .headerList {
+        margin-top: 10px; 
+    }
+    .headerList li {
+        margin: 0 1rem; 
+    }
+    
+    
+}

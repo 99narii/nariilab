@@ -1,10 +1,14 @@
 import React from "react";
+import './style.css';
+import mainImg from '../../img/mainImg.png';
 
 
-function Main() {
+export default function Main() {
 
-<div>
-    
+return(
+<div className="mainContainer">
+    <img className="mainImg" src={mainImg} />
+
 </div>
-
+);
 }
