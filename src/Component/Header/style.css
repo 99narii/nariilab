@@ -1,29 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Gaegu:wght@300;400;700&family=Nanum+Gothic:wght@400;700;800&display=swap');
 .header {
+    font-family: 'Averia Serif Libre', serif;
     color: white;
     font-weight: bold;
+    background-color: #FF7338;
+    width: 100vw;
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 20px; 
-    color: rgb(237, 131, 45);
-    width: 70vw;
-    border-bottom: 5px solid rgb(237, 131, 45);
-}
+    justify-content: center;
 
-.logoImg {
-    max-width: 100%; 
-    width: 200px; 
 }
 
 .headerList {
+    align-items: center; 
+    padding: 10px 20px; 
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+
+}
+
+.logoImg {
+    max-width: 110%; 
+    width: 300px; 
+}
+
+.headerMenu {
     padding: 0; 
     list-style: none;
     display: flex; 
 }
 
-.headerList li {
+.headerMenu li {
+    position: relative; 
     margin: 0 5rem; 
+}
+.headerMenu li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.headerMenu li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 4px; 
+    background-color: #fff; 
+    transition: width 0.3s ease-in-out;
+}
+.headerMenu li:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -35,10 +66,10 @@
         margin-right: 1rem;
 
     }
-    .headerList {
+    .headerMenu {
         margin-top: 10px; 
     }
-    .headerList li {
+    .headerMenu li {
         margin: 0 1rem; 
     }
     

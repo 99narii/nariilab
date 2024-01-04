@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 import Main from './screen/main';
 import Header from './Component/Header';
+import About from './screen/about';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       </header>
       <Routes>
       <Route path="/" element = { <Main />} />
+      <Route path="/about" element = { <About />} />
+
       </Routes>
 
 

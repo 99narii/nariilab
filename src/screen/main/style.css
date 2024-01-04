@@ -1,3 +1,79 @@
 .mainContainer {
-    color: white;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    margin-top: 2rem;
+}
+
+.mainBox {
+    border-radius: 111px;
+    border: 10px solid #FF7338;
+    background: rgba(255, 255, 255, 0.00);
+    width: 1800px;
+    height: 900px;
+    color: #FF7338;
+    position: relative;
+
+}
+.mainBoxFooter {
+    border-radius: 101px;
+    border: 10px solid #FF7338;
+    background: #fff;
+    width: 1400px;
+    height: 100px;
+    position: absolute;
+    bottom: -75px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 4rem;
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.mainCircle {
+    position: absolute; 
+    bottom: 8rem;
+    right: 2rem;
+    width: 700px; 
+    z-index: 0;
+    animation: fadeIn 6s ease-in-out;
+}
+
+.mainText {
+    font-family: 'Averia Serif Libre', serif;
+    z-index: 100;
+    position: relative;
+
+}
+
+.mainText .mainBoxMainText {
+    text-align: left;
+    font-size: 5rem;
+    margin-left: 7rem;
+    margin-top: 6rem;
+    animation: fadeIn 4s ease-in-out;
+
+}
+
+.mainText p {
+    font-size: 3rem;
+    text-align: right;
+    margin-right: 6rem;
+    margin-top: 20rem;
 }
