@@ -14,7 +14,7 @@
 .headerList {
     align-items: center; 
     padding: 10px 20px; 
-    width: 70vw;
+    width: 1240px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -22,8 +22,8 @@
 }
 
 .logoImg {
-    max-width: 110%; 
-    width: 300px; 
+    max-width: 100%; 
+    width: 160px; 
 }
 
 .headerMenu {
@@ -34,13 +34,14 @@
 
 .headerMenu li {
     position: relative; 
-    margin: 0 5rem; 
+    margin: 0 4rem; 
+    font-size: 22px;
 }
+
 .headerMenu li a {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-
 }
 
 .headerMenu li::after {
@@ -51,6 +52,7 @@
     width: 0;
     height: 4px; 
     background-color: #fff; 
+    border-radius: 2px; 
     transition: width 0.3s ease-in-out;
 }
 .headerMenu li:hover::after {
